@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BankApplication</name>
+    </assembly>
+    <members>
+        <member name="T:BankApplication.Account">
+            <summary>
+            Base Account Class. Contains base constructor for balance, the property balance, and the base credit and debit.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Account.#ctor(System.Decimal)">
+            <summary>
+            Base constructor with balance
+            </summary>
+            <param name="inputBalance">What to set balance to</param>
+        </member>
+        <member name="P:BankApplication.Account.Balance">
+            <summary>
+            Balance property with setter and getter.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Account.Credit(System.Decimal)">
+            <summary>
+            Base credit method. Adds input to balance.
+            </summary>
+            <param name="input">User input added to balance.</param>
+        </member>
+        <member name="M:BankApplication.Account.Debit(System.Decimal)">
+            <summary>
+            Base debit method. Subtracts input from balance.
+            </summary>
+            <param name="input">The number to subtract from the balance.</param>
+            <returns>Returns if the debit was possible or not</returns>
+        </member>
+        <member name="T:BankApplication.CheckingAccount">
+            <summary>
+            Derived class from Account that adds a fee per transaction.
+            </summary>
+        </member>
+        <member name="M:BankApplication.CheckingAccount.#ctor(System.Decimal,System.Decimal)">
+            <summary>
+            Constructor that uses the base constructor for balance, and takes a fee
+            </summary>
+            <param name="inputBalance">takes an input from the user to make the initial balance</param>
+            <param name="inputFee">user input for transaction fee</param>
+        </member>
+        <member name="M:BankApplication.CheckingAccount.Credit(System.Decimal)">
+            <summary>
+            Adds an inputted credit to an account before subtracting a fee
+            </summary>
+            <param name="input">user input for credit to be added</param>
+        </member>
+        <member name="M:BankApplication.CheckingAccount.Debit(System.Decimal)">
+            <summary>
+            Subtracts an inputted debit to an account before subtracting a fee if the debit was successful.
+            </summary>
+            <param name="input">user input for debit to be subtracted</param>
+        </member>
+        <member name="T:BankApplication.Program">
+            <summary>
+            This program accesses different types of accounts using inheritance and polymorphism.
+            </summary>
+            <Student>Grace Cappella</Student>
+            <Class>CIS297</Class>
+            <Semester>Winter 2022</Semester>
+        </member>
+        <member name="M:BankApplication.Program.Main(System.String[])">
+            <summary>
+            Runs test cases for Account, SavingsAccount, and CheckingAccount
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="T:BankApplication.SavingsAccount">
+            <summary>
+            Derived class from Account. Adds an interest rate.
+            </summary>
+        </member>
+        <member name="M:BankApplication.SavingsAccount.#ctor(System.Decimal,System.Decimal)">
+            <summary>
+            Constructor for Savings Account. Takes the input balance from base constructor, and the input rate.
+            </summary>
+            <param name="inputBalance">Enters the inital balance from user</param>
+            <param name="inputRate">Enters the input rate from user</param>
+        </member>
+        <member name="M:BankApplication.SavingsAccount.CalculateInterest">
+            <summary>
+            Calcuates how much interest is grown from the balance.
+            </summary>
+            <returns>added credit from interest</returns>
+        </member>
+    </members>
+</doc>
