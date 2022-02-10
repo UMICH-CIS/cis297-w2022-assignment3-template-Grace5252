@@ -7,13 +7,6 @@
       <FileName>SavingsAccount.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BankApplication.Program" Collapsed="true">
-    <Position X="12.25" Y="0.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="BankApplication.CheckingAccount" Collapsed="true">
     <Position X="9.75" Y="2" Width="1.5" />
     <TypeIdentifier>
@@ -26,6 +19,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAABAAgAAAAIEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Account.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BankApplication.Program" Collapsed="true">
+    <Position X="13" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

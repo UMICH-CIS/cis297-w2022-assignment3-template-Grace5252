@@ -65,7 +65,7 @@
             <Class>CIS297</Class>
             <Semester>Winter 2022</Semester>
         </member>
-        <member name="M:BankApplication.Program.Main(System.String[])">
+        <member name="T:BankApplication.Program.AccountTest">
             <summary>
             Runs test cases for Account, SavingsAccount, and CheckingAccount
             </summary>
